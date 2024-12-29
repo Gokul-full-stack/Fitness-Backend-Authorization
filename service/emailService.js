@@ -3,7 +3,7 @@ import transporter from "../utils/nodemailerConfig.js";
 export const sendEmail = async (to, subject, text) => {
   try {
     await transporter.sendMail({
-      from: 'gokulven01@gmail.com',
+      from: process.env.EMAIL_USER,
       to,
       subject,
       text,
