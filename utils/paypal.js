@@ -5,7 +5,7 @@ dotenv.config();
 
 const razorpay = new Razorpay({
   key_id: process.env.RAZORPAY_KEY_ID,
-  key_secret: 'QsATwxr43Cy9PyVhZfP26Fsw',
+  key_secret: process.env.RAZORPAY_KEY_SECRET,
 });
 
 app.post("/api/create-payment/:classId", async (req, res) => {
