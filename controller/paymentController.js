@@ -7,8 +7,8 @@ import Class from "../model/class.js";
 import { sendEmail } from "../service/emailService.js";
 
 const razorpayInstance = new Razorpay({
-  key_id:"rzp_test_0n7wk0znzJmOxP",
-  key_secret: "QsATwxr43Cy9PyVhZfP26Fsw",
+  key_id: process.env.RAZORPAY_KEY_ID,
+  key_secret: process.env.RAZORPAY_KEY_SECRET,
 });
 
 // Create Razorpay Order
