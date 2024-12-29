@@ -17,7 +17,7 @@ Environment Management:
 dotenv (^16.4.5): For loading environment variables from a .env file.
 Payment Integration:
 
-Razorpay SDK (paypal-rest-sdk - ^1.8.1): For integrating PayPal payment processing.
+Razorpay SDK ("razorpay": "^2.9.5",): For integrating Razorpay payment processing.
 Optional: Stripe or Razorpay can be used as alternative payment gateways.
 Email Service:
 
